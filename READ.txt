@@ -1,0 +1,15 @@
+Criador e desenvolvedor: Miguel Nascimento
+Data de inicio: 08/05/2020
+
+Objetivo 
+
+O objetivo principal é desenvolver um sistema ERP comercial, onde o mesmo terá
+que ter estoque, funcionarios, venda de produto, dentre outras caracteristicas
+
+
+Ferramentas
+
+O projeto sera feito com javaFX e banco mysql
+
+
+		"Arquivo sujeito a mudanças ao decorrer do desenvolvimento"
