@@ -26,8 +26,8 @@ public class Main extends Application {
 			 */
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/MainView.fxml"));//Linha responsável por pegar o arquivoFXML referente a cena.
 			ScrollPane scrollPane = loader.load();
-			scrollPane.setFitToHeight(true);
-			scrollPane.setFitToWidth(true);
+			scrollPane.setFitToHeight(true);//Linha de codigo que permite que o scrollPane acompanhe o tamanho da janela
+			scrollPane.setFitToWidth(true);//Linha de codigo que permite que o scrollPane acompanhe o tamanho da janela
 			
 			mainScene = new Scene(scrollPane);
 			primaryStage.setScene(mainScene);// Aqui é colocado a cena dentro do palco principal
