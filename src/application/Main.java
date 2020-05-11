@@ -1,7 +1,6 @@
 package application;
 
 import java.io.IOException;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -16,21 +15,24 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-	private static Scene mainScene;
+	/*
+	 * Atributo para guardar a referencia da cena principal.
+	 */
+	private static Scene cenaPrincipal;
 
 	@Override
 	public void start(Stage primaryStage) {
 		try {
 			/*primaryStage é o palco.
-			 *mainScene é a cena.
+			 *cenaPrincipal é a cena.
 			 */
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/MainView.fxml"));//Linha responsável por pegar o arquivoFXML referente a cena.
 			ScrollPane scrollPane = loader.load();
-			scrollPane.setFitToHeight(true);//Linha de codigo que permite que o scrollPane acompanhe o tamanho da janela
-			scrollPane.setFitToWidth(true);//Linha de codigo que permite que o scrollPane acompanhe o tamanho da janela
+			scrollPane.setFitToHeight(true);//Linha de codigo que permite que o scrollPane acompanhe o tamanho da janela.
+			scrollPane.setFitToWidth(true);//Linha de codigo que permite que o scrollPane acompanhe o tamanho da janela.
 			
-			mainScene = new Scene(scrollPane);
-			primaryStage.setScene(mainScene);// Aqui é colocado a cena dentro do palco principal
+			cenaPrincipal = new Scene(scrollPane);// Referenciando o atributo.
+			primaryStage.setScene(cenaPrincipal);// Aqui é colocado a cena dentro do palco principal.
 			primaryStage.setTitle("Projeto JDBC/FX");
 			primaryStage.show();//Mostra na tela o conteúdo do palco(primaryStage).
 			primaryStage.setResizable(false);// faz com que a janela fique sem poder ser redimensionada.
@@ -38,12 +40,15 @@ public class Main extends Application {
 			e.printStackTrace();
 		}
 	}
-
+	/**
+	 * Metodo para pegar o cenaPrincipal.
+	 * @return cenaPrincipal.
+	 */
 	public static Scene getMainScene() {
-		return mainScene;
+		return cenaPrincipal;
 	}
 	/*
-	 * Onde começa a aplicação
+	 * Onde começa a aplicação.
 	 */
 	public static void main(String[] args) {
 		launch(args);
