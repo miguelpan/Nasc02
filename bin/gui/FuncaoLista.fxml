@@ -8,7 +8,7 @@
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="268.0" prefWidth="526.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="268.0" prefWidth="526.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FuncaoListaController">
    <children>
       <Label alignment="TOP_LEFT" prefHeight="0.0" prefWidth="213.0" text="Funções">
          <padding>
@@ -17,15 +17,15 @@
       </Label>
       <ToolBar prefHeight="0.0" prefWidth="502.0">
         <items>
-          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="63.0" text="Novo" />
+          <Button fx:id="btNovo" mnemonicParsing="false" onAction="#onBtNovoAction" prefHeight="25.0" prefWidth="63.0" text="Novo" />
         </items>
       </ToolBar>
-      <TableView prefHeight="200.0" prefWidth="200.0">
+      <TableView fx:id="tableviewDepartment" prefHeight="200.0" prefWidth="200.0">
         <columns>
-          <TableColumn maxWidth="133.0" minWidth="44.0" prefWidth="40.0" text="Id" />
-          <TableColumn maxWidth="200.0" minWidth="100.0" prefWidth="100.0" text="Nome" />
-            <TableColumn minWidth="0.0" prefWidth="92.0" resizable="false" />
-            <TableColumn prefWidth="75.0" resizable="false" />
+          <TableColumn fx:id="tableColumnId" maxWidth="133.0" minWidth="44.0" prefWidth="40.0" text="Id" />
+          <TableColumn fx:id="tableColumnNome" maxWidth="200.0" minWidth="100.0" prefWidth="100.0" text="Nome" />
+            <TableColumn fx:id="tableColumnEDITA" minWidth="0.0" prefWidth="92.0" resizable="false" />
+            <TableColumn fx:id="tableColumnAPABAR" prefWidth="75.0" resizable="false" />
         </columns>
       </TableView>
    </children>

@@ -9,6 +9,9 @@ que ter estoque, funcionarios, venda de produto, dentre outras caracteristicas
 
 Ferramentas
 
+Eclipse 
+mysql
+
 O projeto sera feito com javaFX e banco mysql
 
 
