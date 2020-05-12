@@ -6,7 +6,6 @@ Objetivo
 O objetivo principal é desenvolver um sistema ERP comercial, onde o mesmo terá
 que ter estoque, funcionarios, venda de produto, dentre outras caracteristicas
 
-
 Ferramentas
 
 Eclipse 
