@@ -1,8 +1,5 @@
 package model.services;
-/**
- * Classe responsavel por fornecer serviços em relação a Funcão.
- * Model MVC.
- */
+
 import java.util.List;
 
 import model.dao.DaoFactory;
@@ -21,17 +18,18 @@ public class FuncaoService {
 	public List<Funcao> findAll() {
 		return dao.findAll();
 	}
+
 	/*
 	 * Metodo pra atualizar ou criar novo departamento
 	 */
 	public void saveOrUpdate(Funcao obj) {
-		if (obj .getId() == null) {// se obj == null, quer dizer que ele vai criar um novo obj
+		if (obj.getId() == null) {// se obj == null, quer dizer que ele vai criar um novo obj
 			dao.insert(obj);
-		}
-		else {// se não ele vai atualizar um ja existente 
+		} else {// se não ele vai atualizar um ja existente
 			dao.update(obj);
 		}
 	}
+
 	/*
 	 * Remover um departamento do banco de dados
 	 */

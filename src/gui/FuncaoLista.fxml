@@ -20,10 +20,10 @@
           <Button fx:id="btNovo" mnemonicParsing="false" onAction="#onBtNovoAction" prefHeight="25.0" prefWidth="63.0" text="Novo" />
         </items>
       </ToolBar>
-      <TableView fx:id="tableviewDepartment" prefHeight="200.0" prefWidth="200.0">
+      <TableView fx:id="tableviewFuncao" prefHeight="200.0" prefWidth="200.0">
         <columns>
           <TableColumn fx:id="tableColumnId" maxWidth="133.0" minWidth="44.0" prefWidth="40.0" text="Id" />
-          <TableColumn fx:id="tableColumnNome" maxWidth="200.0" minWidth="100.0" prefWidth="100.0" text="Nome" />
+          <TableColumn fx:id="tableColumnName" maxWidth="200.0" minWidth="100.0" prefWidth="100.0" text="Nome" />
             <TableColumn fx:id="tableColumnEDITA" minWidth="0.0" prefWidth="92.0" resizable="false" />
             <TableColumn fx:id="tableColumnAPABAR" prefWidth="75.0" resizable="false" />
         </columns>

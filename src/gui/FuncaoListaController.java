@@ -34,7 +34,7 @@ public class FuncaoListaController implements Initializable {
 														// da coluna.
 
 	@FXML
-	private TableColumn<Funcao, String> tableColumnNome;// A primeira corresponde ao tipo da entidade e o segundo ao
+	private TableColumn<Funcao, String> tableColumnName;// A primeira corresponde ao tipo da entidade e o segundo ao
 														// tipo da coluna.
 
 	@FXML
@@ -79,9 +79,9 @@ public class FuncaoListaController implements Initializable {
 		/*
 		 * Padrão o javaFX pra iniciar o comportamento das colunas
 		 */
-		tableColumnId.setCellValueFactory(new PropertyValueFactory<>("id"));// Padrão do javaFX para iniciar o
+		tableColumnId.setCellValueFactory(new PropertyValueFactory<>("Id"));// Padrão do javaFX para iniciar o
 																			// comportamento da coluna.
-		tableColumnNome.setCellValueFactory(new PropertyValueFactory<>("nome"));// Padrão do javaFX para iniciar o
+		tableColumnName.setCellValueFactory(new PropertyValueFactory<>("Name"));// Padrão do javaFX para iniciar o
 																				// comportamento da coluna.
 
 		/**

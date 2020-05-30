@@ -1,16 +1,21 @@
-package model.entidades;
+package model.entities;
+//Departamento é uma entidade do model
 
 import java.io.Serializable;
 
-public class Funcao implements Serializable {
-	private static final long serialVersionUID = 1L;
+public class Funcao implements Serializable {//Implementar o implements Serializable para poder salvar em arquivo ou tranferir em rede
 
+	// Isso serialVersion do Serializable
+	private static final long serialVersionUID = 1L;
+	
+	//Atributos
 	private Integer id;
 	private String name;
-
+	
+	//Construtor padrão
 	public Funcao() {
 	}
-
+	//Construtor com argumentos
 	public Funcao(Integer id, String name) {
 		this.id = id;
 		this.name = name;
@@ -32,6 +37,12 @@ public class Funcao implements Serializable {
 		this.name = name;
 	}
 
+	/*
+	 * HashCode and equals
+	 * Para poder comparar por conteudo
+	 * 
+	 * pode ser gerado automaticamente no source(potão direito) > HashCode() and equals()
+	 */
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -39,7 +50,9 @@ public class Funcao implements Serializable {
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		return result;
 	}
-
+	/*
+	 * HashCode() and equals()
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -56,9 +69,12 @@ public class Funcao implements Serializable {
 			return false;
 		return true;
 	}
-
+	
+	/*
+	 * TO String
+	 */
 	@Override
 	public String toString() {
-		return "Funcao [id=" + id + ", name=" + name + "]";
+		return "Department [id=" + id + ", name=" + name + "]";
 	}
 }
