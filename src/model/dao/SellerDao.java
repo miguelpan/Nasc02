@@ -3,7 +3,7 @@ package model.dao;
 import java.util.List;
 
 import model.entidades.Funcao;
-import model.entities.Seller;
+import model.entidades.Seller;
 //Interface SellerDao
 public interface SellerDao {
 
@@ -12,6 +12,6 @@ public interface SellerDao {
 	void deleteById(Integer id);//Operação responsavel por deletar um registro no banco de dados um objeto passado como parametro
 	Seller findById(Integer id);//Operação responsavel por pegar um ID e consultar o banco de dados com esse ID
 	List<Seller> findAll();//Operação responsavel por retornar todos os registro do banco de dados 
-	List<Seller> findByFuncao(Funcao department);
+	List<Seller> findByFuncao(Funcao funcao);
 }
 

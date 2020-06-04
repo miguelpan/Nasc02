@@ -4,7 +4,7 @@ import java.util.List;
 
 import model.dao.DaoFactory;
 import model.dao.SellerDao;
-import model.entities.Seller;
+import model.entidades.Seller;
 
 public class SellerService {
 	/**

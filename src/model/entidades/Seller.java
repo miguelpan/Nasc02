@@ -1,10 +1,8 @@
-package model.entities;
+package model.entidades;
 //Seller é uma entidade do model
 
 import java.io.Serializable;
 import java.util.Date;
-
-import model.entidades.Funcao;
 
 public class Seller implements Serializable {//Implementar o implements Serializable para poder salvar em arquivo ou tranferir em rede
 

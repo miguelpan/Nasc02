@@ -15,7 +15,7 @@ import db.DB;
 import db.DbException;
 import model.dao.SellerDao;
 import model.entidades.Funcao;
-import model.entities.Seller;
+import model.entidades.Seller;
 
 public class SellerDaoJDBC implements SellerDao {
 
